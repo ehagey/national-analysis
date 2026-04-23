@@ -5,10 +5,6 @@ AI contract announcement on Claude (Anthropic) and ChatGPT (OpenAI) using
 Sensor Tower daily downloads and DAU data. Four complementary empirical
 strategies are implemented.
 
-DeepSeek, Google Gemini, and Perplexity serve as control apps — they were
-active in the same market over the same period but were not parties to the
-contract.
-
 ---
 
 ## Setup
