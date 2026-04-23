@@ -1,7 +1,13 @@
-# LLM App Impact Analysis
+# AI Market Impact of the DoD Deal
 
-Estimates the causal effect of the February 27, 2026 DeepSeek news shock on
-Claude and ChatGPT using Sensor Tower daily downloads and DAU data.
+Estimates the causal effect of the February 27, 2026 Department of Defense
+AI contract announcement on Claude (Anthropic) and ChatGPT (OpenAI) using
+Sensor Tower daily downloads and DAU data. Four complementary empirical
+strategies are implemented.
+
+DeepSeek, Google Gemini, and Perplexity serve as control apps — they were
+active in the same market over the same period but were not parties to the
+contract.
 
 ---
 
@@ -32,8 +38,8 @@ The five apps expected (as they appear in the `Unified Name` column):
 
 | Unified Name | Role |
 |---|---|
-| `Claude by Anthropic` | Treated (primary) |
-| `ChatGPT` | Treated (primary) |
+| `Claude by Anthropic` | Treated |
+| `ChatGPT` | Treated |
 | `DeepSeek - Your AI Assistant` | Control |
 | `Google Gemini` | Control |
 | `Perplexity - AI Search & Chat` | Control |
@@ -75,7 +81,7 @@ Key parameters in `utils/config.py`:
 
 | Setting | Value | Description |
 |---|---|---|
-| `EVENT` | 2026-02-27 | Main event date |
+| `EVENT` | 2026-02-27 | DoD contract announcement date |
 | `SHOCK_START` | 2026-02-24 | Start of information window |
 | `SONNET_REL` | 2026-02-17 | Claude Sonnet 3.7 release (used in falsification) |
 | `WINDOWS` | FEB1, JAN1 | Estimation windows |
